@@ -184,6 +184,31 @@ namespace AllProjects.SomeClass
                 arra[k,m] = value;
             }
         }
+
+
+
+        public void startTypeRedefin()
+        {
+            TypeRedefinition1 type1 = new TypeRedefinition1(10, "Hello, World!");
+            TypeRedefinition1 type2 = new TypeRedefinition1(20, "Bye bye, World!");
+            //Console.WriteLine( type2 / type1);
+
+            //явный случай
+            //int a = (int)type1;
+            //Console.Write( a );
+            //Console.WriteLine();
+
+            //неявный случай           
+            //string b = type1;
+            //Console.WriteLine( b );
+
+
+            ArrayCreate array1 = new ArrayCreate(10);
+            array1.showArray();
+            Console.WriteLine();
+            array1[9] = 1;
+            Console.WriteLine(array1[9]);
+        }
     }
 
 }
