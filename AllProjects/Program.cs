@@ -10,35 +10,35 @@ using AllProjects.SomeClass; // Теперь могу обращаться к п
 
 namespace AllProjects
 {
-    class SomeMethods
-    {
+    //class SomeMethods
+    //{
 
-        public int[] InitArray()
-        {
-            Console.WriteLine("Введите размерность массива");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int[] arra = new int[n];
-            Random r = new Random();
-            for (int i = 0; i < arra.Length; i++)
-            {
-                arra[i] = r.Next(0, 11);
-            }
-            return arra;
-        }
+    //    public int[] InitArray()
+    //    {
+    //        Console.WriteLine("Введите размерность массива");
+    //        int n = Convert.ToInt32(Console.ReadLine());
+    //        int[] arra = new int[n];
+    //        Random r = new Random();
+    //        for (int i = 0; i < arra.Length; i++)
+    //        {
+    //            arra[i] = r.Next(0, 11);
+    //        }
+    //        return arra;
+    //    }
 
 
-        public void ShowArray(int[] a )
-        {
-            for (int i = 0; i < a.Length; i++)
-            {
+    //    public void ShowArray(int[] a )
+    //    {
+    //        for (int i = 0; i < a.Length; i++)
+    //        {
                 
-                Console.WriteLine("{0} ", a[i]);
-            }
-            Console.WriteLine();
-        }
+    //            Console.WriteLine("{0} ", a[i]);
+    //        }
+    //        Console.WriteLine();
+    //    }
 
 
-    }
+    //}
 
 
 
@@ -47,24 +47,26 @@ namespace AllProjects
     {
         static void Main(string[] args)
         {
-            var file = new TextWriterTraceListener("newLog.log");
-            Debug.Listeners.Add(new TextWriterTraceListener("newLog.log"));
-            Debug.AutoFlush = true;
-            Debug.Indent();
+            //Debug.Listeners.Add(new TextWriterTraceListener("newLog.log"));
+            //Debug.AutoFlush = true;
+            //Debug.Indent();
 
-            SomeMethods m1 = new SomeMethods();
-            Debug.WriteLine("Object of class SomeMethod created like m1");
-            int[] a = m1.InitArray();
-            Debug.WriteLine("Array was created like with name 'a' ");
-            Console.WriteLine();    
+            //SomeMethods m1 = new SomeMethods();
+            //Debug.WriteLine("Object of class SomeMethod created like m1");
+            //int[] a = m1.InitArray();
+            //Debug.WriteLine("Array was created like with name 'a' ");
+            //Console.WriteLine();    
 
-            m1.ShowArray(a);
+            //m1.ShowArray(a);
 
-            Debug.Unindent();
-            var myWriter = new TextWriterTraceListener();
-            Debug.Listeners.Add(myWriter);
+            //Debug.Unindent();
+            //var myWriter = new TextWriterTraceListener();
+            //Debug.Listeners.Add(myWriter);
 
-            ControlConstructionAndExceptionHandling.StartControl();
+            //ControlConstructionAndExceptionHandling.StartControl();
+
+            InheritanceOfClass inf = new InheritanceOfClass();
+            inf.start_InhertianceOfClass();
 
             Console.ReadKey();
         }

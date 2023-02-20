@@ -45,12 +45,25 @@ namespace AllProjects.SomeClass
 
 
             //Задание 2
-     
             BasicParent bp = new BasicParent();
-            int[] a = bp.CreateArra;
             bp.ShowArra();
+            Console.WriteLine();
+            bp.SortByBubbles();
+            int a = bp.MaxEl;
+            Console.WriteLine("{0} - максимальный элемент массива", a);
+            
 
-    }
+            Daughter dg = new Daughter();
+            Console.WriteLine("Дочерний класс сортировка методом пузырька");
+            dg.SortByBubbles();
+            Console.WriteLine(dg.Max());
+
+            Console.WriteLine();
+            Console.WriteLine("Произведение замены");
+            dg.Zamena();
+            dg.ShowArra();
+
+        }
     }
 
     class Parent
@@ -129,7 +142,6 @@ namespace AllProjects.SomeClass
         }
     }
 
-
     class Parent3
     {
         public int n;
@@ -180,39 +192,95 @@ namespace AllProjects.SomeClass
 
     }
 
-    
-
-
 
     class BasicParent
     {
         public int[] arra = new int[50];
+        protected int maxEl;
 
-        //Лучше делать через конструктор
+        public int MaxEl { get => Max();}
 
-        public int[] CreateArra
+        public BasicParent()
         {
-            get 
+            Random r = new Random();
+            for(int i = 0; i < arra.Length; i++)
             {
-                Random r = new Random();
-                foreach (int i in arra) { arra[i] = r.Next(0, 100); }
-                return arra;
+                arra[i] = r.Next(-100,100);
             }
-            set { arra = value; }
+            this.arra = arra;
         }
 
         public void ShowArra()
         {
-            foreach (int n in arra)
+            for (int i = 0; i < arra.Length; i++)
             {
-                Console.Write("{0} ", arra[n]);
+                Console.Write("{0} ", arra[i]);
             }
             Console.WriteLine();
         }
 
+        public virtual void SortByBubbles()
+        {
+            for (int i = 0; i < arra.Length - 1; i++)
+            {
+                for (int j = 0; j < arra.Length-1-i; j++)
+                {
+                    if (arra[j] > arra[j+1])
+                    {
+                        int tmp = arra[j];
+                        arra[j] = arra[j + 1];
+                        arra[j + 1] = tmp;
+                    }
+                }
+            }
+            ShowArra();
+        }
+
+
+        public int Max()
+        {
+            int max = arra[0];
+            for (int i = 1; i < arra.Length; i++)
+            {
+                if (arra[i] > max ) { max = arra[i]; }
+            }
+            return max;
+        }
+
     }
 
+    class Daughter : BasicParent
+    {
 
+        public override void SortByBubbles()
+        {
+            Console.WriteLine("Переопределённый метод");
+            Array.Sort(arra);
+            foreach (int i in arra) { Console.Write(i + " "); }
+        }
+
+
+        new public string Max()
+        {
+            maxEl = arra.Max();
+            int index = Array.IndexOf(arra, MaxEl);
+            return MaxEl+" - макс элемент, затем его индекс "+index ; 
+        }
+
+        public int[] Zamena()
+        {
+            int maxEl = arra.Max();
+            int minEl = arra.Min();
+            int indElMin = Array.IndexOf(arra, minEl);
+            int indElMx = Array.IndexOf(arra, maxEl);
+            Console.WriteLine("{0} максимальный элемент массива и его индекс {1} и минимальный {2} и его индекс {3}", maxEl, indElMx, minEl, indElMin);
+            int tmp = arra[indElMin];
+            arra[indElMin] = arra[indElMx];
+            arra[indElMx] = tmp;
+            return arra;
+        }
+
+    }
 
 
 
