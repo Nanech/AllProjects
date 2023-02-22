@@ -48,7 +48,7 @@ namespace AllProjects.SomeClass
             BasicParent bp = new BasicParent();
             bp.ShowArra();
             Console.WriteLine();
-            bp.SortByBubbles();
+            //bp.SortByBubbles();
             int a = bp.MaxEl;
             Console.WriteLine("{0} - максимальный элемент массива", a);
             
@@ -64,132 +64,6 @@ namespace AllProjects.SomeClass
             dg.ShowArra();
 
         }
-    }
-
-    class Parent
-    {
-        protected int i = 10;
-        //int i = 10;
-        string s = "привет";
-
-
-        public void show()
-        {
-            Console.WriteLine("строковое поле равно {0}, а числовое {1}, а объект, который его вызывает {2}", s, i, GetType().Name);
-        }
-
-
-        public int ShowInt 
-        {
-            get { return i; }
-            set { i = value; }
-        }
-        
-        public virtual int ShowInteger
-        { 
-            get { return i; }
-            set { i = value; }
-        }
-
-    }
-
-    class Child1 : Parent
-    {
-
-        new public int ShowInt
-        {
-            get { return i; }
-            set { i = value; }
-        }
-
-        public override int ShowInteger
-        {
-            get { return i; }
-            set { i = value; }
-        }
-    }
-
-    class Parent2
-    {
-        protected void show()
-        {
-            Console.WriteLine("Я обычный метод родительского класса");
-        }
-
-        protected virtual void vshow()
-        {
-            Console.WriteLine("я виртуальный метод родительского класса");
-        }
-
-        public void display()
-        {
-            show();
-            vshow();
-        }
-    }
-
-    class Child2: Parent2
-    {
-        new public void show()
-        {
-            Console.WriteLine("Я замещенный метод в производном классе");
-        }
-        //Для переопределения нужно, чтобы в родителе был метод виртуал (который мы хотим наследоать)
-        //А в дочернем слово override
-        protected override void vshow()
-        {
-            Console.WriteLine("я переопределеный виртуальный метод");
-        }
-    }
-
-    class Parent3
-    {
-        public int n;
-
-        //public Parent3()
-        //{
-        //    n = 10;
-        //}
-
-        public Parent3(int n)
-        {
-            this.n = n;
-        }
-
-        public void show()
-        {
-            Console.WriteLine("Ваше число {0}", n);
-        }
-
-    }
-
-    class Child3 : Parent3
-    {
-
-
-        //public Child3()
-        //{
-        //    n = 20;
-        //}
-
-        //public Child3(int n) 
-        //{
-        //    this.n = n;
-        //}
-
-        //public Child3() : base(234) // В данном случае конструктору родительского класса передаётся 234
-        //{
-        //    n = 20;
-        //}
-
-        //public Child3(int n) :base(234)
-        //{
-        //    this.n = n;
-        //}
-
-        public Child3(int n) : base(n) { }
-
-
     }
 
 
@@ -282,6 +156,132 @@ namespace AllProjects.SomeClass
 
     }
 
+
+    class Parent
+    {
+        protected int i = 10;
+        //int i = 10;
+        string s = "привет";
+
+
+        public void show()
+        {
+            Console.WriteLine("строковое поле равно {0}, а числовое {1}, а объект, который его вызывает {2}", s, i, GetType().Name);
+        }
+
+
+        public int ShowInt
+        {
+            get { return i; }
+            set { i = value; }
+        }
+
+        public virtual int ShowInteger
+        {
+            get { return i; }
+            set { i = value; }
+        }
+
+    }
+
+    class Child1 : Parent
+    {
+
+        new public int ShowInt
+        {
+            get { return i; }
+            set { i = value; }
+        }
+
+        public override int ShowInteger
+        {
+            get { return i; }
+            set { i = value; }
+        }
+    }
+
+    class Parent2
+    {
+        protected void show()
+        {
+            Console.WriteLine("Я обычный метод родительского класса");
+        }
+
+        protected virtual void vshow()
+        {
+            Console.WriteLine("я виртуальный метод родительского класса");
+        }
+
+        public void display()
+        {
+            show();
+            vshow();
+        }
+    }
+
+    class Child2 : Parent2
+    {
+        new public void show()
+        {
+            Console.WriteLine("Я замещенный метод в производном классе");
+        }
+        //Для переопределения нужно, чтобы в родителе был метод виртуал (который мы хотим наследоать)
+        //А в дочернем слово override
+        protected override void vshow()
+        {
+            Console.WriteLine("я переопределеный виртуальный метод");
+        }
+    }
+
+    class Parent3
+    {
+        public int n;
+
+        //public Parent3()
+        //{
+        //    n = 10;
+        //}
+
+        public Parent3(int n)
+        {
+            this.n = n;
+        }
+
+        public void show()
+        {
+            Console.WriteLine("Ваше число {0}", n);
+        }
+
+    }
+
+    class Child3 : Parent3
+    {
+
+
+        //public Child3()
+        //{
+        //    n = 20;
+        //}
+
+        //public Child3(int n) 
+        //{
+        //    this.n = n;
+        //}
+
+        //public Child3() : base(234) // В данном случае конструктору родительского класса передаётся 234
+        //{
+        //    n = 20;
+        //}
+
+        //public Child3(int n) :base(234)
+        //{
+        //    this.n = n;
+        //}
+
+        public Child3(int n) : base(n) { }
+
+
+    }
 
 
 

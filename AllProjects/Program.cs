@@ -65,8 +65,12 @@ namespace AllProjects
 
             //ControlConstructionAndExceptionHandling.StartControl();
 
-            InheritanceOfClass inf = new InheritanceOfClass();
-            inf.start_InhertianceOfClass();
+            //InheritanceOfClass inf = new InheritanceOfClass();
+            //inf.start_InhertianceOfClass();
+
+
+            TriangleForTesting trin = new TriangleForTesting();
+            trin.StartMethodTriangle();
 
             Console.ReadKey();
         }
