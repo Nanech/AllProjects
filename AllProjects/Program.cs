@@ -69,8 +69,12 @@ namespace AllProjects
             //inf.start_InhertianceOfClass();
 
 
-            TriangleForTesting trin = new TriangleForTesting();
-            trin.StartMethodTriangle();
+            //TriangleForTesting trin = new TriangleForTesting();
+            //trin.StartMethodTriangle();
+
+
+
+
 
             Console.ReadKey();
         }

@@ -31,7 +31,6 @@ namespace AllProjects.SomeClass
            
         }
 
-
         public void StartMethodTriangle()
         {
             if (a + b != c && b + c != c && a + c != b) 
