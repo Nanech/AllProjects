@@ -73,7 +73,7 @@ namespace AllProjects
             //trin.StartMethodTriangle();
 
 
-
+            DelegatesEvents.StatrTheDelegate();
 
 
             Console.ReadKey();
