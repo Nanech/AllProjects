@@ -73,7 +73,9 @@ namespace AllProjects
             //trin.StartMethodTriangle();
 
 
-            DelegatesEvents.StatrTheDelegate();
+            //DelegatesEvents.StatrTheDelegate();
+
+            woman_file.strartSolution();
 
 
             Console.ReadKey();

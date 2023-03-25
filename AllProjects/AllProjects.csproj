@@ -51,6 +51,7 @@
     <Compile Include="SomeClass\IntefaceAbstractClass.cs" />
     <Compile Include="SomeClass\TriangleForTesting.cs" />
     <Compile Include="SomeClass\TypeRedefinition.cs" />
+    <Compile Include="SomeClass\woman_file.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
