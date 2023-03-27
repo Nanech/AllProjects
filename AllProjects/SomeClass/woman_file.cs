@@ -20,13 +20,10 @@ namespace AllProjects.SomeClass
             this.nails = nails;
         }
 
-
         public override string ToString()
         {
             return name + " " + podtyagivanie + " " + nails;
         }
-
-
     }
 
 

@@ -25,6 +25,7 @@ namespace AllProjects.SomeClass
             this.Str = str;
         }
 
+        
         //Переопределение Метода
         public override string ToString()
         {

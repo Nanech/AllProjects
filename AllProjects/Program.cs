@@ -31,7 +31,7 @@ namespace AllProjects
     //    {
     //        for (int i = 0; i < a.Length; i++)
     //        {
-                
+
     //            Console.WriteLine("{0} ", a[i]);
     //        }
     //        Console.WriteLine();
@@ -40,42 +40,55 @@ namespace AllProjects
 
     //}
 
+    //Было в мэйин
 
+    //Debug.Listeners.Add(new TextWriterTraceListener("newLog.log"));
+    //Debug.AutoFlush = true;
+    //Debug.Indent();
+
+    //SomeMethods m1 = new SomeMethods();
+    //Debug.WriteLine("Object of class SomeMethod created like m1");
+    //int[] a = m1.InitArray();
+    //Debug.WriteLine("Array was created like with name 'a' ");
+    //Console.WriteLine();    
+
+    //m1.ShowArray(a);
+
+    //Debug.Unindent();
+    //var myWriter = new TextWriterTraceListener();
+    //Debug.Listeners.Add(myWriter);
+
+    //TriangleForTesting trin = new TriangleForTesting();
+    //trin.StartMethodTriangle();
 
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Debug.Listeners.Add(new TextWriterTraceListener("newLog.log"));
-            //Debug.AutoFlush = true;
-            //Debug.Indent();
 
-            //SomeMethods m1 = new SomeMethods();
-            //Debug.WriteLine("Object of class SomeMethod created like m1");
-            //int[] a = m1.InitArray();
-            //Debug.WriteLine("Array was created like with name 'a' ");
-            //Console.WriteLine();    
 
-            //m1.ShowArray(a);
 
-            //Debug.Unindent();
-            //var myWriter = new TextWriterTraceListener();
-            //Debug.Listeners.Add(myWriter);
-
+            //Контроль и ловля ошибок 
             //ControlConstructionAndExceptionHandling.StartControl();
 
+
+            //Классы и интерфейсы
             //InheritanceOfClass inf = new InheritanceOfClass();
             //inf.start_InhertianceOfClass();
 
 
-            //TriangleForTesting trin = new TriangleForTesting();
-            //trin.StartMethodTriangle();
-
-
+            //Делегаты
             //DelegatesEvents.StatrTheDelegate();
 
-            woman_file.strartSolution();
+            //Файл с женищинами типа КР
+            //woman_file.strartSolution();
+
+            //Структуры и файлы
+            //StructureAndFile.CreateArrayAndWriteInFile();
+
+            //Бинарные файлы
+            BinaryFiles.PrintAndReadBinary();
 
 
             Console.ReadKey();

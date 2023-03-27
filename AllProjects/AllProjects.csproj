@@ -45,10 +45,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SomeClass\BinaryFiles.cs" />
     <Compile Include="SomeClass\ControlConstructionAndExceptionHandling.cs" />
     <Compile Include="SomeClass\DelegatesEvents.cs" />
     <Compile Include="SomeClass\InheritanceOfClass.cs" />
     <Compile Include="SomeClass\IntefaceAbstractClass.cs" />
+    <Compile Include="SomeClass\StructureAndFile.cs" />
     <Compile Include="SomeClass\TriangleForTesting.cs" />
     <Compile Include="SomeClass\TypeRedefinition.cs" />
     <Compile Include="SomeClass\woman_file.cs" />
