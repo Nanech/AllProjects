@@ -68,6 +68,9 @@ namespace AllProjects
         {
 
 
+            //Массивы
+            Arrays.StartArray();
+
 
             //Контроль и ловля ошибок 
             //ControlConstructionAndExceptionHandling.StartControl();
@@ -81,14 +84,14 @@ namespace AllProjects
             //Делегаты
             //DelegatesEvents.StatrTheDelegate();
 
-            //Файл с женищинами типа КР
+            //Файл с женщинами типа КР
             //woman_file.strartSolution();
 
             //Структуры и файлы
             //StructureAndFile.CreateArrayAndWriteInFile();
 
             //Бинарные файлы
-            BinaryFiles.PrintAndReadBinary();
+            //BinaryFiles.PrintAndReadBinary();
 
 
             Console.ReadKey();
