@@ -52,6 +52,7 @@
     <Compile Include="SomeClass\InheritanceOfClass.cs" />
     <Compile Include="SomeClass\IntefaceAbstractClass.cs" />
     <Compile Include="SomeClass\StructureAndFile.cs" />
+    <Compile Include="SomeClass\TaskDateTimeAnd.cs" />
     <Compile Include="SomeClass\TriangleForTesting.cs" />
     <Compile Include="SomeClass\TypeRedefinition.cs" />
     <Compile Include="SomeClass\woman_file.cs" />

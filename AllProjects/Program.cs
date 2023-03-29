@@ -68,30 +68,37 @@ namespace AllProjects
         {
 
 
-            //Массивы
-            Arrays.StartArray();
+            // Массивы
+            //Arrays.StartArray(); //Done
 
 
-            //Контроль и ловля ошибок 
-            //ControlConstructionAndExceptionHandling.StartControl();
+            // Контроль и ловля ошибок 
+            //ControlConstructionAndExceptionHandling.StartControl(); //Done
 
 
-            //Классы и интерфейсы
+            // Классы и интерфейсы
             //InheritanceOfClass inf = new InheritanceOfClass();
-            //inf.start_InhertianceOfClass();
+            //inf.start_InhertianceOfClass(); //Not Done
+
+            // Абстрактные классы и интерфейсы
+            //Not done
+
+            // Делегаты
+            //DelegatesEvents.StatrTheDelegate(); //Not done
 
 
-            //Делегаты
-            //DelegatesEvents.StatrTheDelegate();
 
-            //Файл с женщинами типа КР
-            //woman_file.strartSolution();
+            // Файл с женщинами типа КР
+            //woman_file.strartSolution(); //Done
 
-            //Структуры и файлы
-            //StructureAndFile.CreateArrayAndWriteInFile();
+            // Структуры и файлы
+            //StructureAndFile.CreateArrayAndWriteInFile(); //Done
 
-            //Бинарные файлы
-            //BinaryFiles.PrintAndReadBinary();
+            // Бинарные файлы
+            //BinaryFiles.PrintAndReadBinary();//Done
+
+            // Дата и время
+            TaskDateTimeAnd.StartDateTime();
 
 
             Console.ReadKey();
