@@ -84,7 +84,9 @@ namespace AllProjects
             //Not done
 
             // Делегаты
-            //DelegatesEvents.StatrTheDelegate(); //Not done
+            //DelegatesEvents.StartDelegateClassWork();
+            //DelegatesEvents.SecondVersionDelegateClassWork();
+            DelegatesEvents.MineDelegates();
 
 
 
@@ -98,7 +100,7 @@ namespace AllProjects
             //BinaryFiles.PrintAndReadBinary();//Done
 
             // Дата и время
-            TaskDateTimeAnd.StartDateTime();
+            //TaskDateTimeAnd.StartDateTime();
 
 
             Console.ReadKey();
