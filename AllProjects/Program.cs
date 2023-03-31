@@ -66,7 +66,10 @@ namespace AllProjects
     {
         static void Main(string[] args)
         {
+            // Входной контроль сделан
 
+            // Статические методы
+            //StaticMethods.StartStaticMethod(); //Done
 
             // Массивы
             //Arrays.StartArray(); //Done
@@ -78,16 +81,15 @@ namespace AllProjects
 
             // Классы и интерфейсы
             //InheritanceOfClass inf = new InheritanceOfClass();
-            //inf.start_InhertianceOfClass(); //Not Done
+            //inf.start_InhertianceOfClass(); //Done
 
             // Абстрактные классы и интерфейсы
-            //Not done
+            //IntefaceAbstractClass.startTheTask();  //Done
 
             // Делегаты
             //DelegatesEvents.StartDelegateClassWork();
             //DelegatesEvents.SecondVersionDelegateClassWork();
-            DelegatesEvents.MineDelegates();
-
+            //DelegatesEvents.MineDelegates(); //Done
 
 
             // Файл с женщинами типа КР
@@ -100,7 +102,7 @@ namespace AllProjects
             //BinaryFiles.PrintAndReadBinary();//Done
 
             // Дата и время
-            //TaskDateTimeAnd.StartDateTime();
+            //TaskDateTimeAnd.StartDateTime(); //Done
 
 
             Console.ReadKey();

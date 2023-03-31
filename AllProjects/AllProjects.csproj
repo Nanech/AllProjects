@@ -51,6 +51,7 @@
     <Compile Include="SomeClass\DelegatesEvents.cs" />
     <Compile Include="SomeClass\InheritanceOfClass.cs" />
     <Compile Include="SomeClass\IntefaceAbstractClass.cs" />
+    <Compile Include="SomeClass\StaticMethods.cs" />
     <Compile Include="SomeClass\StructureAndFile.cs" />
     <Compile Include="SomeClass\TaskDateTimeAnd.cs" />
     <Compile Include="SomeClass\TriangleForTesting.cs" />
