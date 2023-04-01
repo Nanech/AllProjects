@@ -45,12 +45,12 @@ namespace AllProjects.SomeClass
         {
             // Task 1
 
-            //Console.WriteLine("Введите число m");
-            //double m = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine("Введите число n");
-            //double n = Convert.ToDouble(Console.ReadLine());
-            //FirstTask(ref m, ref n);
-            //Console.WriteLine("Старшая цифра дробной части - {0}, младшая цифра целой части - {1}", m, n);
+            Console.WriteLine("Введите число m");
+            double m = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите число n");
+            double n = Convert.ToDouble(Console.ReadLine());
+            FirstTask(ref m, ref n);
+            Console.WriteLine("Старшая цифра дробной части - {0}, младшая цифра целой части - {1}", m, n);
 
             // Task 2
 
@@ -65,9 +65,9 @@ namespace AllProjects.SomeClass
 
             // Task 3
 
-            Console.WriteLine("Введите n");
-            double n = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("сумма последовательности идущих n кубов {0}", ThirdTask(0, n));
+            //Console.WriteLine("Введите n");
+            //double n = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("сумма последовательности идущих n кубов {0}", ThirdTask(0, n));
 
 
 

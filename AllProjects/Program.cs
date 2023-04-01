@@ -75,10 +75,8 @@ namespace AllProjects
             // Массивы
             //Arrays.StartArray(); //Done
 
-
             // Контроль и ловля ошибок 
             //ControlConstructionAndExceptionHandling.StartControl(); //Done
-
 
             // Классы и интерфейсы
             //InheritanceOfClass inf = new InheritanceOfClass();
@@ -104,9 +102,14 @@ namespace AllProjects
             // Дата и время
             //TaskDateTimeAnd.StartDateTime(); //Done
 
-
             // Контрольная
-            ControlFirst.startSolution();
+            //ControlFirst.startSolution(); //Done
+
+            // Регулярные выражения            
+            //RegularExpressions.StartRegular(); //Done
+
+
+
 
             Console.ReadKey();
         }
