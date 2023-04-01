@@ -48,6 +48,7 @@
     <Compile Include="SomeClass\Arrays.cs" />
     <Compile Include="SomeClass\BinaryFiles.cs" />
     <Compile Include="SomeClass\ControlConstructionAndExceptionHandling.cs" />
+    <Compile Include="SomeClass\ControlFirst.cs" />
     <Compile Include="SomeClass\DelegatesEvents.cs" />
     <Compile Include="SomeClass\InheritanceOfClass.cs" />
     <Compile Include="SomeClass\IntefaceAbstractClass.cs" />

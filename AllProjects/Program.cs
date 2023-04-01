@@ -8,6 +8,7 @@ using System.Diagnostics;
 
 using AllProjects.SomeClass; // Теперь могу обращаться к папке 
 
+
 namespace AllProjects
 {
     //class SomeMethods
@@ -91,7 +92,6 @@ namespace AllProjects
             //DelegatesEvents.SecondVersionDelegateClassWork();
             //DelegatesEvents.MineDelegates(); //Done
 
-
             // Файл с женщинами типа КР
             //woman_file.strartSolution(); //Done
 
@@ -104,6 +104,9 @@ namespace AllProjects
             // Дата и время
             //TaskDateTimeAnd.StartDateTime(); //Done
 
+
+            // Контрольная
+            ControlFirst.startSolution();
 
             Console.ReadKey();
         }
