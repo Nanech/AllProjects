@@ -22,6 +22,7 @@ namespace AllProjects.SomeClass
             Regex group = new Regex(@"^[1-4]{2}(П|Л|Б|Ю|В){1}$");
 
             Regex password = new Regex(@"^(?=.*[0-9]{1,})(?=.*[a-z]{3,})(?=.*[A-Z]{1,})(?=.*[*+=\-!@#$%^&()_'::\\]{1,})[0-9a-zA-Z*+=\-!@#$%^&()_'::/\\]{8,}$"); 
+            //The messeage why is not match
 
             
             //Console.WriteLine(mailIndex.IsMatch("123456"));
@@ -35,10 +36,6 @@ namespace AllProjects.SomeClass
             //Console.WriteLine(group.IsMatch("34П"));
 
             //Console.WriteLine(password.IsMatch("1asdO*+:"));
-
-
-
-
         }
 
     }

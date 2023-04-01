@@ -108,6 +108,8 @@ namespace AllProjects
             // Регулярные выражения            
             //RegularExpressions.StartRegular(); //Done
 
+            // Задание на перечисления и коллекции
+            EnumerationAndCollections.StartThatClas();
 
 
 

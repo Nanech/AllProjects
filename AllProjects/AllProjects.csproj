@@ -50,6 +50,7 @@
     <Compile Include="SomeClass\ControlConstructionAndExceptionHandling.cs" />
     <Compile Include="SomeClass\ControlFirst.cs" />
     <Compile Include="SomeClass\DelegatesEvents.cs" />
+    <Compile Include="SomeClass\EnumerationAndCollections.cs" />
     <Compile Include="SomeClass\InheritanceOfClass.cs" />
     <Compile Include="SomeClass\IntefaceAbstractClass.cs" />
     <Compile Include="SomeClass\RegularExpressions.cs" />
